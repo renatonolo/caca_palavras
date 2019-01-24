@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Caça Palavras - HTML 5</title>
+        <script type="text/javascript" src="./scripts/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    </head>
+
+    <body onload="loadBody()">
+        <header class="clearfix">
+            <span id="created_by">Created by: <a href="http://github.com/renatonolo" target="_blank"><b>Renato N. Lourenço</b></a></span>
+            <h1>Caça Palavras - HTML 5</h1>
+            <p>
+                Um pequeno projeto para avaliação no processo de seleção da <a href="https://www.drconsulta.com/" target="_blank">Dr.Consulta</a>
+            </p>
+        </header>
+
+        <div id="tela_inicial" class="clearfix">
+            <h1>Bem vindo ao caça palavras</h1>
+            <p>
+                Digite no campo abaixo as palavras que deseja utilizar. Separe cada palavra por um espaço em branco.
+            </p>
+            <textarea id="txt_palavras" placeholder="Praia Areia Sol Verão ..." rows="4"></textarea><br/>
+            <button id="btn_criar">CRIAR</button>
+        </div>
+
+        <div id="tela_jogo" class="clearfix">
+            <div>
+                <h2>Palavras cadastradas: </h2><br/>
+                <span id="palavrasCadastradas"></span>
+            </div>
+            <div>
+                <table id="table_jogo">
+                    <tbody>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h2>Palavras encontradas: </h2><br/>
+                <span id="palavras_encontradas"></span>
+                <input type="hidden" id="mouseDown" value="false" />
+                <input type="hidden" id="palavraSelecionada" value="" />
+            </div>
+        </div>
+    </body>
+</html>
